@@ -35,13 +35,11 @@ class _MyAppState extends State<MyApp> {
         child: myProviders(
           context: context,
           child: Builder(builder: (BuildContext context) {
-            // final themeChanger = Provider.of<AppColor>(context);
             return MaterialApp(
-              // themeMode: themeChanger.getTheme,
               theme: ThemeData.light(),
               darkTheme: ThemeData.dark(),
               debugShowCheckedModeBanner: false,
-              title: 'Gift Card',
+              title: 'Test App',
               onGenerateRoute: AppRoutes.genrateRoutes,
               initialRoute: MyRoutes.splashView,
             );

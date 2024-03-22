@@ -38,10 +38,6 @@ class HomeProvider extends ChangeNotifier with AuthService {
   }
 
 
-
-
-
-
   PageController get controller => _controller;
   PageController _controller = PageController();
   bool _isLastPage = false;

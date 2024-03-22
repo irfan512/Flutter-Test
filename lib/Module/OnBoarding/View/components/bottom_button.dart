@@ -8,7 +8,6 @@ import 'package:testapp/Utils/Theme/colors.dart';
 import 'package:testapp/Utils/app_button.dart';
 import 'package:testapp/Utils/constant/AppTextView.dart';
 
-
 class BottomButton extends StatefulWidget {
   const BottomButton({super.key});
 

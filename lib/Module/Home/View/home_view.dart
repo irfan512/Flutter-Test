@@ -64,7 +64,9 @@ class _HomeViewState extends State<HomeView> {
               itemCount: homeProvider.postsList.length,
               physics: const ClampingScrollPhysics(),
               pageSnapping: true,
-              onPageChanged: (value) {},
+              onPageChanged: (value) {
+                context.read<HomeProvider>().setPage(0);
+              },
               scrollDirection: Axis.vertical,
               itemBuilder: (context, index) {
                 return ItemScreen(

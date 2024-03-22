@@ -28,7 +28,6 @@ class _RootViewState extends State<RootView> {
         child: _getScreen(_selectedIndex),
       ),
       bottomNavigationBar: Container(
-        // color: AppColor.black,
         child: BottomNavigationBar(
           backgroundColor: AppColor.primaryColor,
           type: BottomNavigationBarType.fixed,
@@ -38,12 +37,10 @@ class _RootViewState extends State<RootView> {
           unselectedLabelStyle: TextStyle(
               fontSize: 10,
               fontWeight: FontWeight.w700,
-              // color: AppColor.lightgrey
               ),
           selectedLabelStyle: const TextStyle(
               fontSize: 10,
               fontWeight: FontWeight.w700,
-              // color: AppColor.lightPrimary
               ),
           items: <BottomNavigationBarItem>[
             BottomNavigationBarItem(
@@ -75,7 +72,6 @@ class _RootViewState extends State<RootView> {
                 height: 40,
                 width: 60,
                 decoration: BoxDecoration(
-                    // color: AppColor.primaryColor,
                     gradient: const LinearGradient(
                         begin: Alignment.centerRight,
                         end: Alignment.centerLeft,
@@ -88,8 +84,6 @@ class _RootViewState extends State<RootView> {
                  AppImages.addIcon,
                   color: AppColor.black,
                   scale: 3,
-                  // height: 27,
-                  // width: 27,
                 ),
               ),
               label: '',
